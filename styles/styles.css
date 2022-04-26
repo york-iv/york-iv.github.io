@@ -1,0 +1,291 @@
+.landing-page, .about-page,
+.projects-page, .games-page,
+.skills-page {
+    background-color: #181a1b;
+}
+
+.cobblebreak-page {
+    background-color: #472d3c;
+}
+
+/* General content formatting for each page */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.projects-content, .games-content, 
+.cobblebreak-content, .skills-content,
+.about-content {
+    gap: 3vh;
+}
+
+.heading > * {
+    text-align: center;
+    color: rgb(232, 230, 227);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2)
+}
+
+/* Handling for all links on each page */
+.nav-container {
+    display: grid;
+    grid-template: 100px / repeat(4, 150px);
+    gap: 6vh;
+}
+
+.projects-container, .about-container,
+.games-container, .skills-container,
+.cobblebreak-container {
+    grid-template: 50px / repeat(4, 110px);
+    gap: 4vh;
+    min-height: 10vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: groove 8px gray;
+    border-radius: 1em;
+    text-align: center;
+    box-shadow: 10px 5px 5px black;
+    font-size: 20pt;
+}
+
+.projects-bar, .games-bar, 
+.cobblebreak-bar, .skills-bar,
+.about-bar {
+    font-size: 15pt;
+    border: groove 5px gray;
+}
+
+#nav-games, #nav-projects, #nav-landing {
+    color: whitesmoke;
+}
+
+/* Thumbnail backgrounds */
+.landing, .about,
+.skills, .projects,
+.games {
+    background-image: radial-gradient(circle at center center, rgba(33,33,33,0),
+    rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 1px,
+    transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(56,56,56) 0px, rgb(56,56,56) 5px,
+    transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+}
+
+/* Project page specific */
+.project-links {
+    display: grid;
+    grid-template: repeat(4, 60px) / 50vh;
+    gap: 25px;
+}
+
+.p-title {
+    display: flex;
+    background-color: gray;
+    border: groove 3px gray;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px black;
+    padding-left: 15px;
+    font-size: 15pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: radial-gradient(circle at center center, rgba(33,33,33,0),
+    rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 1px,
+    transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(56,56,56) 0px, rgb(56,56,56) 5px,
+    transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+}
+
+/* Games page specific */
+.games-links {
+    display: grid;
+    grid-template: 200px / repeat(2, 300px);
+    gap: 25px;
+}
+
+.g-title {
+    display: flex;
+    background-color: gray;
+    border: groove 3px gray;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px black;
+    padding-left: 15px;
+    font-size: 15pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+#cobblebreak-thumb {
+    background-image: url(../images/games/cobblebreak-cover.png);
+    background-size: cover;
+}
+
+/* Cobblebreak page specific */
+.cobblebreak-container {
+    display: grid;
+    grid-template: 40px / 100px;
+    gap: 6vh;
+    min-height: 1px;
+}
+
+/* Skills page specific */
+.skills-lists {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 75px 315px;
+    grid-auto-flow: column;
+    column-gap: 25px;
+}
+
+.skills-lists > * {
+    text-align: left;
+    color: rgb(232, 230, 227);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+}
+
+ul {
+    border: solid;
+}
+
+.skills-content {
+    min-height: 3vh;
+}
+
+li {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+/* About page specific */
+.about-content {
+    min-height: 0;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hello-text, .university-text,
+.japan-text, .welding-text,
+.today-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    text-indent: 18pt;
+    color: rgb(232, 230, 227);
+    font-size: 18pt;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.a-text {
+    max-width: 70vh;
+}
+
+.today-text {
+    max-width: 80vh;
+}
+
+.a-heading {
+    margin: 0;
+}
+
+.a-box {
+    display: flex;
+}
+
+.hello-box {
+    padding-right: 200px;
+}
+
+.welding-box {
+    padding-bottom: 25px;
+}
+
+.a-text, .a-img {
+    padding: 50px;
+}
+
+.today-box, .today-text {
+    padding: 5px 0;
+}
+
+.a-img {
+    filter: drop-shadow(10px 10px 4px #45454d9c);
+}
+
+#me {
+    border-radius: 30%;
+}
+
+#lambda, #judo,
+#welding {
+    border-radius: 20%;
+}
+
+/* Handles animation underlining links during hover */
+
+/* a:hover {
+    color: #000 <--- Changes color of text while mousing over link
+} */
+
+.white-text {
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.white-text::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.white-text:hover::before {
+    transform: scaleX(1);
+}
+
+.cobble-text {
+    position: relative;
+    color: #8a6f39;
+    text-decoration: none;
+}
+
+.cobble-text::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #8a6f39;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.cobble-text:hover::before {
+    transform: scaleX(1);
+}
